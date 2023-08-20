@@ -1,0 +1,120 @@
+.page-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.map-container {
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+.fluid-container.controls {
+    position: relative;
+    z-index: 2;
+    /*background-color: rgba(255,255,255,0.5);*/
+    pointer-events: none;
+    padding: 0 20px;
+}
+
+.btn.btn-outline-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.fluid-container.controls .input-group {
+    pointer-events: all;
+}
+
+
+.min-heightSearchContent {
+    min-height: 100px;
+}
+
+.kids-image {
+    opacity: 0.9;
+    background-color: white;
+    border-radius: 50%;
+    animation: pulse;
+    animation-duration: .5s;
+    animation-iteration-count: 5;
+}
+
+@keyframes pulse {
+    0% {
+        border-radius: 50%;
+        background-color: white;
+    }
+    50% {
+        border-radius: 5%;
+        background-color: yellow;
+    }
+    100%{
+        border-radius: 50%;
+        background-color: white;
+    }
+}
+
+.singleDayDiv{
+    border: 0.5rem solid black;
+    border-radius: 5%;
+    background-color: white;
+    pointer-events: all;
+    animation: fading;
+    animation-duration: .5s;
+    animation-iteration-count: 5;
+}
+
+@keyframes fading {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.singleDayDiv:hover {
+    border: 0.4rem solid lightblue;
+    background-color: black;
+    color: white;
+}
+
+.singleDayDate {
+    background-color: #354670;
+    color: white;
+    border-bottom: 0.1rem solid black;
+}
+
+.dynamic-cityAndTemp {
+    border: 0.2rem solid black;
+    border-radius: 2%;
+    background-color: #354670;
+    color: white;
+}
+
+#five-dayParent {
+    margin-bottom: 20px;
+}
+
+#dynamic-city {
+    pointer-events: all;
+}
+
